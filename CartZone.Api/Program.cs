@@ -1,12 +1,12 @@
 
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer;
-using TalabatDemo.Factories;
+using CartZone.Factories;
 using Persistence;
-using TalabatDemo.Extentions;
+using CartZone.Extentions;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-namespace TalabatDemo
+namespace CartZone
 {
     public class Program
     {
@@ -65,7 +65,7 @@ namespace TalabatDemo
                     {
                         DisplayRequestDuration=true
                     };
-                    options.DocumentTitle="Talabat Ecommerce App";
+                    options.DocumentTitle="CartZone Ecommerce App";
                     options.DocExpansion(DocExpansion.None);
                     options.EnableFilter();
                     options.EnablePersistAuthorization();

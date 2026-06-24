@@ -1,4 +1,4 @@
-namespace TalabatDemo
+namespace CartZone
 {
     public class WeatherForecast
     {

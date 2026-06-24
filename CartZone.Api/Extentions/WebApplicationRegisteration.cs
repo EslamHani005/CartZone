@@ -1,7 +1,7 @@
-﻿using DomainLayer.Contracts;
-using TalabatDemo.CustomMiddleWares;
+using DomainLayer.Contracts;
+using CartZone.CustomMiddleWares;
 
-namespace TalabatDemo.Extentions
+namespace CartZone.Extentions
 {
     public static class WebApplicationRegisteration
     {

@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
-using TalabatDemo.Factories;
+using CartZone.Factories;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 
-namespace TalabatDemo.Extentions
+namespace CartZone.Extentions
 {
     public static class ServiceRegisteration
     {

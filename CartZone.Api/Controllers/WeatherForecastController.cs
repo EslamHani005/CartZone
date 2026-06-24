@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace TalabatDemo.Controllers
+namespace CartZone.Controllers
 {
     [ApiController]
     [Route("[controller]")]

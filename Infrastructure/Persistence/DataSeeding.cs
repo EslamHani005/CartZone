@@ -1,4 +1,4 @@
-﻿using DomainLayer.Contracts;
+using DomainLayer.Contracts;
 using DomainLayer.Models.IdentityModels;
 using DomainLayer.Models.OrderModels;
 using DomainLayer.Models.ProductModels;
@@ -33,7 +33,7 @@ namespace PersistenceLayer
             if (!_storeDbContext.ProductBrands.Any()) {
 
                 //var productBrands = await File.ReadAllTextAsync("../Infrastructure/Persistence/Data/DataSeeding/brands.json");
-                var productBrands =  File.OpenRead("../TalabatDemo/wwwroot/DataSeeding/brands.json");
+                var productBrands =  File.OpenRead("../CartZone.Api/wwwroot/DataSeeding/brands.json");
                 var brands =await JsonSerializer.DeserializeAsync<List<ProductBrand>>(productBrands);
 
                 if (  brands is not null && brands.Any()) { 
@@ -44,7 +44,7 @@ namespace PersistenceLayer
             if (!_storeDbContext.ProductTypes.Any())
             {
 
-                var productTypes = File.OpenRead("../TalabatDemo/wwwroot/DataSeeding/types.json");
+                var productTypes = File.OpenRead("../CartZone.Api/wwwroot/DataSeeding/types.json");
                 var types =await  JsonSerializer.DeserializeAsync<List<ProductType>>(productTypes);
 
                 if (types is not null && types.Any())
@@ -58,7 +58,7 @@ namespace PersistenceLayer
             if (!_storeDbContext.Products.Any())
             {
 
-                var products = File.OpenRead("../TalabatDemo/wwwroot/DataSeeding/products.json");
+                var products = File.OpenRead("../CartZone.Api/wwwroot/DataSeeding/products.json");
                 var prods =await JsonSerializer.DeserializeAsync<List<Product>>(products);
 
                 if (prods is not null && prods.Any())
@@ -72,7 +72,7 @@ namespace PersistenceLayer
             if (!_storeDbContext.Set<DeliveryMethod>().Any())
             {
 
-                var deliveryMethods = File.OpenRead("../TalabatDemo/wwwroot/DataSeeding/delivery.json");
+                var deliveryMethods = File.OpenRead("../CartZone.Api/wwwroot/DataSeeding/delivery.json");
                 var deliveryMethodsObjs = await JsonSerializer.DeserializeAsync<List<DeliveryMethod>>(deliveryMethods);
 
                 if (deliveryMethodsObjs is not null && deliveryMethodsObjs.Any())

@@ -1,9 +1,9 @@
-﻿using DomainLayer.Exceptions;
+using DomainLayer.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Shared.ErrorModels;
 using System.Text.Json;
 
-namespace TalabatDemo.CustomMiddleWares
+namespace CartZone.CustomMiddleWares
 {
     public class CustomExceptionHandlerMiddleWare
     {

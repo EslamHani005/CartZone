@@ -1,8 +1,8 @@
-﻿using Azure;
+using Azure;
 using Microsoft.AspNetCore.Mvc;
 using Shared.ErrorModels;
 
-namespace TalabatDemo.Factories
+namespace CartZone.Factories
 {
     public static class ApiResponseFactory
     {
