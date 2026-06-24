@@ -1,0 +1,15 @@
+﻿@Peresentation_HostAddress = http://localhost:5015
+
+### Get Product By Id
+@id=1
+GET {{Peresentation_HostAddress}}/api/Products/{{id}}
+
+### Get All Types
+
+GET {{Peresentation_HostAddress}}/api/Products/types
+
+###Get All Brands
+
+GET {{Peresentation_HostAddress}}/api/Products/brands
+
+###
