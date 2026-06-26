@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #f8f7f4;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e0d8cc;
+    --card: #ffffff;
+    --gold: #c9a84c;
+  }
+  .dark {
+    --bg: #111110;
+    --fg: #f8f7f4;
+    --muted: #9a9a9a;
+    --border: #2a2a28;
+    --card: #1c1c1a;
+    --gold: #d4a853;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', system-ui, sans-serif;
+    transition: background-color 0.2s, color 0.2s;
+  }
+}
